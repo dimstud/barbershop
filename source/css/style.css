@@ -390,3 +390,7 @@ template {
 [hidden] {
   display: none;
 }
+/* CSS Document */
+html {
+  box-sizing: border-box;
+}
