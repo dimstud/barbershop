@@ -390,7 +390,35 @@ template {
 [hidden] {
   display: none;
 }
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Arial", sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+  background-color: #292929;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 /* CSS Document */
 html {
   box-sizing: border-box;
+}
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+.page-header__logo {
+  height: 85px;
+}
+@media (min-width: 768px) {
+  .page-header__logo {
+    order: 2;
+    height: 400px;
+  }
 }
