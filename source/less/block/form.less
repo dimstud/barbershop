@@ -1,5 +1,6 @@
 .form {
   width: 320px;
+  margin: 0 auto;
 }
 
 .form__list {
@@ -8,7 +9,32 @@
 
 .form__item {
   width: auto;
-  
+
   margin: 0;
   padding-top: 30px;
+}
+
+.form-beard {
+    width: 260px;
+    margin: 0 auto;
+}
+
+.form-beard__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-add {
+    width: 280px;
+    margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+    .form {
+        width: 768px;
+    }
+
+    .form__list {
+        width: 640px;
+    }
 }
