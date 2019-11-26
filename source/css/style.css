@@ -515,10 +515,10 @@ html {
 }
 @media (min-width: 768px) {
   .advantages {
-    width: 640px;
+    width: 768px;
   }
   .advantages__list {
-    width: 586px;
+    width: 640px;
   }
 }
 @media (min-width: 1200px) {
