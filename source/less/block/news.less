@@ -1,5 +1,10 @@
 .news {
-    width: 320px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.news__list {
+  width: 280px;
 }
 
 @media (min-width: @tablet-width) {
@@ -10,6 +15,10 @@
     .news__wrapper {
         display: flex;
     }
+  
+    .news__list {
+        width: 586px;
+    }
 
     .news__to-all {
         order: 2;
@@ -18,14 +27,18 @@
 
 @media (min-width: @desktop-width) {
     .news {
-        width: 960px;
+        width: 1200px;
     }
 
     .news__wrapper {
         display: flex;
     }
+  
+    .news__list {
+        width: 960px;
+    }
 
-    .news__wrapper {
+    .news__to-all {
         order: 2;
     }
 }

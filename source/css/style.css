@@ -510,16 +510,104 @@ html {
   width: 320px;
   margin: 0 auto;
 }
+.advantages__list {
+  width: 230px;
+}
 @media (min-width: 768px) {
   .advantages {
     width: 640px;
   }
+  .advantages__list {
+    width: 586px;
+  }
 }
 @media (min-width: 1200px) {
   .advantages {
-    width: 960px;
+    width: 1200px;
   }
   .advantages__wrapper {
     display: flex;
+  }
+  .advantages__list {
+    width: 960px;
+  }
+}
+.news {
+  width: 320px;
+  margin: 0 auto;
+}
+.news__list {
+  width: 280px;
+}
+@media (min-width: 768px) {
+  .news {
+    width: 640px;
+  }
+  .news__wrapper {
+    display: flex;
+  }
+  .news__list {
+    width: 586px;
+  }
+  .news__to-all {
+    order: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .news {
+    width: 1200px;
+  }
+  .news__wrapper {
+    display: flex;
+  }
+  .news__list {
+    width: 960px;
+  }
+  .news__to-all {
+    order: 2;
+  }
+}
+.reviews {
+  width: 320px;
+  margin: 0 auto;
+}
+.reviews__wrapper {
+  width: 280px;
+  display: flex;
+  margin: 0 auto;
+}
+.reviews__list {
+  width: 264px;
+}
+.reviews__author-picture {
+  width: 50px;
+}
+.reviews__text {
+  width: 200px;
+}
+@media (min-width: 768px) {
+  .reviews {
+    width: 640px;
+  }
+  .reviews__wrapper {
+    display: flex;
+    margin: 0;
+  }
+  .reviews__list {
+    width: 542px;
+  }
+  .reviews__author-picture {
+    width: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .reviews {
+    width: 1200px;
+  }
+  .reviews__wrapper {
+    display: flex;
+  }
+  .reviews__list {
+    width: 818px;
   }
 }
