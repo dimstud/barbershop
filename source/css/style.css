@@ -210,6 +210,11 @@ img {
 @media (min-width: 1200px) {
   .page-header__logo {
     height: 648px;
+    background-position: center 0;
+    background-size: cover;
+  }
+  .page-header__logo img {
+    margin-top: 57px;
   }
 }
 .page-footer {
