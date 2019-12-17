@@ -10,10 +10,10 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп Бородинский">
+      <img class="page-header__logo-image" src="img/logotype-mobile.png" width="226" height="30" alt="Барбершоп Бородинский">
     </a>
     <nav class="main-nav main-nav--closed">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active ">
@@ -34,7 +34,11 @@
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <a class="user-list__login" href="logit.html">Войти</a>
+            <a class="user-list__login" href="logit.html">
+              <svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16">
+                <image id="login.svg" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA0UlEQVQ4jYWTywrCQAxFT6X4BPeC/oOgKxcuxG9361bwGwQXikJbKinpw2YmPVCmneReksk0KcuSCAlwBib63ieXJzXb/8TEgmhTrwJhAYyAfpJ8H4DpUAVvs9MiLVTuMWbAKhJrtJ7BB9gDWxPpkOohJZE+M2Cj8atRq8FJ19Bp1me01tWYSMLcyMIsQ5WKwcWZ9Q4YAy/NM1WKwcPIWkT8VHFhop0eQ8gY78AtEGvwxvgdEFfteAbuHa/PzWtBEo7aSuiOyI/mGggy4lhOAWQ/QMwmsC1xrIcAAAAASUVORK5CYII="/>
+              </svg>
+              Войти</a>
           </li>
         </ul>
       </div>
