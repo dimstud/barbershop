@@ -736,6 +736,7 @@ img {
 .advantages {
   width: 320px;
   margin: 0 auto;
+  background-color: #292929;
 }
 .advantages__list {
   width: 230px;
