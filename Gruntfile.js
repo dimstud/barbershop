@@ -44,6 +44,29 @@ module.exports = function (grunt) {
           "source/css/style.min.css": ["source/css/style.css"]
         }
       }
+    },
+    imagemin: {
+      options: {
+        images: {
+          optimizationLevel: 3,
+          progressive: true
+        },
+        files: [{
+          expand: true,
+          src: ["source/img/**/*.{png,jpg,svg}"]
+        }]
+      }
+    },
+    cwebp: {
+      images: {
+        options: {
+          q: 90
+        },
+        files: [{
+          expand: true,
+          src: ["source/img/**/*.{png,jpg}"]
+        }]
+      }
     }
   });
 };
