@@ -768,12 +768,26 @@ img {
   line-height: 27px;
 }
 .advantages__toggles {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .slider__toggle {
+  display: block;
   width: 10px;
-  height: 10px;
-  background-image: url("../../img/slider__toggle.png");
+  height: 15px;
+  margin-right: 22px;
+  border: 2px solid #ffffff;
+  background-color: #292929;
+  transform: rotate(45deg);
+}
+.slider__toggle-active {
+  display: block;
+  width: 10px;
+  height: 15px;
+  margin-right: 22px;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  transform: rotate(45deg);
 }
 .advantages__border {
   display: inline-block;

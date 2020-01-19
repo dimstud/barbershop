@@ -24,13 +24,31 @@
 }
 
 .advantages__toggles {
-	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
 .slider__toggle {
+	display: block;
 	width: 10px;
-	height: 10px;
-	background-image: url("../../img/slider__toggle.png");
+	height: 15px;
+	margin-right: 22px;
+	
+	border: 2px solid #ffffff;
+	background-color: @bg-darkgrey;
+	
+	transform: rotate(45deg);
+
+	&-active{
+		display: block;
+		width: 10px;
+		height: 15px;
+		margin-right: 22px;
+		border: 2px solid #ffffff;
+		background-color: #ffffff;
+		
+		transform: rotate(45deg);
+	}
 }
 
 .advantages__border {
