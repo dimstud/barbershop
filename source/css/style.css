@@ -212,6 +212,7 @@ img {
 @media (min-width: 768px) {
   .news {
     width: 768px;
+    margin-top: -7px;
   }
   .news__wrapper {
     display: flex;
@@ -226,6 +227,7 @@ img {
 @media (min-width: 1200px) {
   .news {
     width: 1200px;
+    margin-top: 20px;
   }
   .news__wrapper {
     display: flex;
