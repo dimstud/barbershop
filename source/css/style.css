@@ -192,6 +192,7 @@ img {
   margin: 0 auto;
   margin-top: -34px;
   color: #292929;
+  border-top: #ffffff;
   background-color: #ffffff;
 }
 .news__wrapper {
@@ -227,7 +228,7 @@ img {
 @media (min-width: 1200px) {
   .news {
     width: 1200px;
-    margin-top: 20px;
+    margin-top: -20px;
   }
   .news__wrapper {
     display: flex;
@@ -803,6 +804,7 @@ img {
   border-right-width: 160px;
   border-bottom-width: 0px;
   border-left-width: 160px;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .advantages {
