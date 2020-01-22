@@ -209,6 +209,15 @@ img {
 }
 .news__item {
   display: flex;
+  justify-content: flex-start;
+}
+.news__date {
+  max-width: 50px;
+  max-height: 50px;
+  background-color: #000000;
+}
+.news__text {
+  max-width: 210px;
 }
 @media (min-width: 768px) {
   .news {
