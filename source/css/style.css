@@ -892,8 +892,16 @@ img {
   .advantages__toggles {
     display: none;
   }
-  .advantages__border {
+  .advantages__item {
     border: none;
+    text-align: center;
+  }
+  .advantages__title {
+    margin-top: 30px;
+  }
+  .advantages__description {
+    max-width: 240px;
+    margin-top: 20px;
   }
   .advantages__border {
     border-top-width: 64px;
