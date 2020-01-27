@@ -1,4 +1,4 @@
-  {
+{
   "name": "barbershop",
   "version": "1.0.0",
   "description": "",
@@ -13,7 +13,7 @@
     "test": "npm run editorconfig && npm run stylelint",
     "build": "grunt less && grunt postcss",
     "start": "npm run build && grunt serve"
-    },
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dimstud/barbershop.git"
