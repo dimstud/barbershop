@@ -1,3 +1,7 @@
+/* CSS Document */
+html {
+  box-sizing: border-box;
+}
 @font-face {
   font-weight: normal;
   font-style: normal;
@@ -204,23 +208,77 @@ img {
   text-align: center;
   font-size: 30px;
   font-weight: bold;
-  text-align: 30px;
+  line-height: 30px;
   text-transform: uppercase;
 }
+.news__list {
+  padding: 0;
+}
 .news__item {
+  width: auto;
+  margin: 0;
+  padding: 0;
   display: flex;
-  width: 280px;
-  margin: 0 auto;
-  flex-direction: row;
   justify-content: space-between;
 }
+.news__item:nth-child(1) {
+  border-bottom: 1px solid #e5ddd5;
+}
 .news__date {
-  max-width: 50px;
-  max-height: 50px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-top: 27px;
+  position: relative;
+  border: 1px solid #1d1d1c;
   background-color: #000000;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 16px;
+}
+.news__date::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 51px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: solid #ffffff;
+  border-top-color: #000000;
+  border-top-width: 11px;
+  border-right-width: 25px;
+  border-bottom-width: 0px;
+  border-left-width: 25px;
+  margin: 0;
+}
+.news__day {
+  font-size: 30px;
+  line-height: 30px;
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 .news__text {
   max-width: 210px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+.news__to-all {
+  display: block;
+  width: auto;
+  height: 50px;
+  margin-bottom: 27px;
+  border: 1px solid #e5ddd5;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .news {
