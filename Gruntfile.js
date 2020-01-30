@@ -67,6 +67,30 @@ module.exports = function (grunt) {
           src: ["source/img/**/*.{png,jpg}"]
         }]
       }
+    },
+    svgstore: {
+     options: {
+       includeTitleElement: false
+     },
+     sprite: {
+       files: {
+         "source/img/sprite.svg": ["source/img/ico-*.svg"]
+       }
+     }
+    },
+    posthtml: {
+      options: {
+        use: [
+          require("posthtml-include")()
+        ]
+      },
+      html: {
+        files: [{
+          expand: true,
+          src: ["source/*.html"]
+        }]
+      }
     }
   });
+  grunt.registerTask("serve", ["browserSync", "watch"]);
 };
