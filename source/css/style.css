@@ -195,9 +195,11 @@ img {
   width: 320px;
   margin: 0 auto;
   margin-top: -34px;
+  padding-bottom: 30px;
   color: #292929;
   border-top: #ffffff;
-  background-color: #ffffff;
+  border-bottom: 1px solid #e5ddd5;
+  background-color: #f8f5f2;
 }
 .news__wrapper {
   width: 280px;
@@ -210,6 +212,7 @@ img {
   font-weight: bold;
   line-height: 30px;
   text-transform: uppercase;
+  color: #000000;
 }
 .news__list {
   padding: 0;
@@ -231,21 +234,22 @@ img {
   margin-top: 27px;
   position: relative;
   border: 1px solid #1d1d1c;
+  border-bottom: none;
   background-color: #000000;
   text-align: center;
   color: #ffffff;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 10px;
 }
 .news__date::before {
   content: '';
   position: absolute;
   right: 0;
-  top: 51px;
+  top: 50px;
   display: inline-block;
   width: 0;
   height: 0;
-  border: solid #ffffff;
+  border: solid #f8f5f2;
   border-top-color: #000000;
   border-top-width: 11px;
   border-right-width: 25px;
@@ -259,6 +263,7 @@ img {
   display: block;
   padding: 0;
   margin: 0;
+  margin-top: 5px;
 }
 .news__text {
   max-width: 210px;
@@ -269,8 +274,9 @@ img {
 .news__to-all {
   display: block;
   width: auto;
-  height: 50px;
   margin-bottom: 27px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border: 1px solid #e5ddd5;
   text-align: center;
   font-size: 18px;
@@ -287,12 +293,38 @@ img {
   }
   .news__wrapper {
     display: flex;
+    width: 640px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .news__title {
+    width: 320px;
+    font-size: 40px;
+    line-height: 30px;
+    text-align: left;
   }
   .news__list {
-    width: 586px;
+    width: auto;
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .news__item {
+    width: 320px;
+    margin: 0;
+    justify-content: flex-start;
+  }
+  .news__item:nth-child(1) {
+    border: none;
+  }
+  .news__date {
+    margin-right: 20px;
   }
   .news__to-all {
     order: 2;
+    display: block;
+    margin-top: 50px;
+    width: 160px;
   }
 }
 @media (min-width: 1200px) {
@@ -301,13 +333,17 @@ img {
     margin-top: -20px;
   }
   .news__wrapper {
-    display: flex;
+    padding-top: 140px;
+    width: 960px;
+  }
+  .news__title {
+    margin-left: 71px;
   }
   .news__list {
     width: 960px;
   }
   .news__to-all {
-    order: 2;
+    width: 160px;
   }
 }
 .page-header {
@@ -869,7 +905,7 @@ img {
   display: inline-block;
   width: 0;
   height: 0;
-  border: solid #ffffff;
+  border: solid #f8f5f2;
   border-top-color: #292929;
   border-top-width: 35px;
   border-right-width: 160px;
