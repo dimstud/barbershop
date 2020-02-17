@@ -13,6 +13,13 @@
 	text-align: center;
 }
 
+.advantages__item {
+	display: none;
+	
+	&--active {
+		display: block;
+	}
+}
 
 .advantages__title {
 	font-size: 30px;
@@ -79,18 +86,20 @@
   .advantages__list {
     width: 640px;
 		text-align: left;
+		
+		position: relative;
+		margin: 0 auto;
 
   }
 
-	.advantages__list {
-		position: relative;
-		margin: 0 auto;
-	}
 
 	.advantages__item {
 		width: 578px;
 		margin: 0 auto;
 		padding: 0;
+		
+		display: block;
+		
 		border-bottom: 1px solid #4a4a4a;
 		&:last-child {
 			border: none;

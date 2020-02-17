@@ -218,6 +218,9 @@ img {
   padding: 0;
 }
 .news__item {
+  display: none;
+}
+.news__item-active {
   width: auto;
   margin: 0;
   padding: 0;
@@ -822,6 +825,19 @@ img {
   background-color: #f8f5f2;
   border-top: 1px solid #e5ddd5;
 }
+.reviews::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: solid #292929;
+  border-top-color: #f8f5f2;
+  border-top-width: 35px;
+  border-right-width: 160px;
+  border-bottom-width: 0px;
+  border-left-width: 160px;
+  margin: 0;
+}
 .reviews__wrapper {
   width: 280px;
   display: block;
@@ -838,23 +854,83 @@ img {
   display: none;
 }
 .reviews__list {
-  width: 264px;
+  width: 280px;
+  padding: 0;
 }
 .reviews__item {
   display: none;
 }
 .reviews__item--active {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  margin: 0;
 }
 .reviews__author-picture {
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.reviews__author-image {
+  height: 47px;
   width: 50px;
+  margin: 0;
+}
+.reviews__author-name {
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 27px;
+  margin: 0;
 }
 .reviews__text {
   width: 200px;
+  margin-left: 70px;
+  margin-top: -26px;
+  font-size: 18px;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  line-height: 27px;
+}
+.reviews__prev {
+  display: none;
+}
+.reviews__next {
+  display: none;
+}
+.reviews__toggles {
+  display: flex;
+  justify-content: center;
+}
+.reviews__toggles .slider__toggle {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-right: 22px;
+  margin-bottom: 18px;
+  padding: 0;
+  border: 2px solid #939290;
+  background-color: #f8f5f2;
+  transform: rotate(45deg);
+}
+.reviews__toggles .slider__toggle-active {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-right: 22px;
+  padding: 0;
+  border: 1px solid #626261;
+  background-color: #353535;
+  transform: rotate(45deg);
 }
 @media (min-width: 768px) {
   .reviews {
-    width: 640px;
+    width: 768px;
+    margin-top: 0;
+  }
+  .reviews::after {
+    display: none;
   }
   .reviews__wrapper {
     display: flex;
@@ -888,6 +964,12 @@ img {
   margin-bottom: 15px;
   list-style: none;
   text-align: center;
+}
+.advantages__item {
+  display: none;
+}
+.advantages__item--active {
+  display: block;
 }
 .advantages__title {
   font-size: 30px;
@@ -942,8 +1024,6 @@ img {
   .advantages__list {
     width: 640px;
     text-align: left;
-  }
-  .advantages__list {
     position: relative;
     margin: 0 auto;
   }
@@ -951,6 +1031,7 @@ img {
     width: 578px;
     margin: 0 auto;
     padding: 0;
+    display: block;
     border-bottom: 1px solid #4a4a4a;
   }
   .advantages__item:last-child {

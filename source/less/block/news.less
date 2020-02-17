@@ -32,11 +32,15 @@
 }
 
 .news__item {
-	width: auto;
+	display: none;
+	
+	&-active {
+		width: auto;
 	margin: 0;
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
+	}
 	
 	&:nth-child(1){
 		border-bottom: 1px solid #e5ddd5;
