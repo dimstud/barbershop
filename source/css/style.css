@@ -1030,7 +1030,7 @@ img {
     width: 1200px;
   }
   .reviews__wrapper {
-    display: flex;
+    width: 960px;
   }
   .reviews__list {
     width: 818px;
