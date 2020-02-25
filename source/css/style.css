@@ -303,7 +303,7 @@ img {
   .news__title {
     width: 320px;
     font-size: 40px;
-    line-height: 30px;
+    line-height: 38px;
     text-align: left;
   }
   .news__list {
@@ -316,6 +316,9 @@ img {
     width: 320px;
     margin: 0;
     justify-content: flex-start;
+  }
+  .news__item-active {
+    margin-right: 30px;
   }
   .news__item:nth-child(1) {
     border: none;
@@ -760,23 +763,95 @@ img {
 .page-footer {
   width: 320px;
   margin: 0 auto;
+  padding-top: 36px;
+  padding-bottom: 24px;
+  border: 1px solid #353535;
 }
 .page-footer__wrapper {
   width: auto;
+  margin: 0;
+  padding: 0;
 }
 .page-footer__contacts {
-  width: auto;
+  width: 280px;
   margin: 0 auto;
+  padding-bottom: 26px;
+  text-align: center;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 18px;
+}
+.contacts__title {
+  font-weight: bold;
+  margin: 0 auto;
+}
+.contacts__phone {
+  display: block;
+  width: auto;
+  line-height: 27px;
+  font-weight: bold;
+  margin-top: 22px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 1px solid #353535;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 .page-footer__social {
   width: auto;
   height: 100px;
   margin: 0;
+  padding: 0;
+}
+.social__list {
+  width: auto;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.social__item {
+  width: 105px;
+  height: 100px;
+  border: 1px solid #353535;
+  line-height: 100px;
+  text-align: center;
+}
+.social__item:nth-child(1) {
+  border-left: none;
+  border-right: none;
+}
+.social__item:nth-child(3) {
+  border-left: none;
+  border-right: none;
+}
+.social__link {
+  line-height: 10px;
+  vertical-align: middle;
+  display: inline-block;
 }
 .page-footer__copyright {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 34px;
+  text-align: center;
+}
+.copyright__text {
+  line-height: 27px;
+  font-weight: normal;
+}
+.copyright__link {
+  display: block;
   width: auto;
-  height: 140px;
-  margin: 0;
+  line-height: 27px;
+  font-weight: bold;
+  margin-top: 14px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 1px solid #353535;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .page-footer {
@@ -795,7 +870,6 @@ img {
   .page-footer__social {
     width: auto;
     order: 3;
-    display: flex;
   }
 }
 @media (min-width: 1200px) {
@@ -837,6 +911,7 @@ img {
   border-bottom-width: 0px;
   border-left-width: 160px;
   margin: 0;
+  margin-bottom: -7px;
 }
 .reviews__wrapper {
   width: 280px;
