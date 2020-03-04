@@ -895,23 +895,55 @@ img {
 @media (min-width: 1200px) {
   .page-footer {
     width: 1200px;
+    margin-top: -100px;
+    padding-bottom: 10px;
+    border: none;
   }
   .page-footer__wrapper {
     width: 960px;
     flex-wrap: nowrap;
   }
   .page-footer__contacts {
-    width: 322px;
-    margin-left: 0;
-    margin-right: 0;
+    width: 321px;
+    margin: 0;
+    margin-right: 82px;
   }
   .contacts__title {
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
   }
   .page-footer__social {
     width: 164px;
     order: 2;
+    margin-right: 239px;
+    border: none;
+  }
+  .social__title {
+    font-size: 18px;
+    text-align: 27px;
+    text-align: center;
+  }
+  .social__list {
+    height: 50px;
+  }
+  .social__item {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .social__item:nth-child(1) {
+    margin-right: 6px;
+    border-left: 1px solid #353535;
+    border-right: 1px solid #353535;
+  }
+  .social__item:nth-child(3) {
+    margin-left: 6px;
+    border-left: 1px solid #353535;
+    border-right: 1px solid #353535;
+  }
+  .social__link svg {
+    width: 60%;
+    height: 60%;
   }
   .page-footer__copyright {
     width: 160px;
