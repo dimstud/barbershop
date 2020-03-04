@@ -803,6 +803,9 @@ img {
   margin: 0;
   padding: 0;
 }
+.social__title {
+  display: none;
+}
 .social__list {
   width: auto;
   display: flex;
@@ -877,11 +880,6 @@ img {
     font-weight: normal;
     border: none;
   }
-  .page-footer__copyright {
-    width: 160px;
-    margin: 0;
-    padding-top: 0;
-  }
   .page-footer__social {
     width: 100%;
     margin: 0;
@@ -890,6 +888,11 @@ img {
   }
   .social__item {
     width: 100%;
+  }
+  .page-footer__copyright {
+    width: 160px;
+    margin: 0;
+    padding-top: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -918,6 +921,8 @@ img {
     border: none;
   }
   .social__title {
+    display: block;
+    margin-top: 0;
     font-size: 18px;
     text-align: 27px;
     text-align: center;
@@ -948,6 +953,10 @@ img {
   .page-footer__copyright {
     width: 160px;
     order: 3;
+  }
+  .copyright__link {
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 .reviews {
