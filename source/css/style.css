@@ -899,10 +899,15 @@ img {
   .page-footer__wrapper {
     width: 960px;
     flex-wrap: nowrap;
-    padding-left: -70px;
   }
-  .footer__contacts {
-    width: 320px;
+  .page-footer__contacts {
+    width: 322px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contacts__title {
+    margin-left: 0;
+    margin-right: 0;
   }
   .page-footer__social {
     width: 164px;
